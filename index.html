@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<style type="text/css">
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: green;
+}
+fieldset{
+    width: 800px;
+    height: 500px;
+    margin: 10px auto;
+    background-color: gainsboro;
+    color: black;
+}
+
+legend:hover{
+    background-color: blue;
+    color: gray;
+    font-size: 30px;
+    transition: 0.5s;
+
+}
+legend{
+    color: gainsboro;
+    text-align: center;
+    border-radius: 80px;
+    background-color: gray;
+}
+input{
+    
+}
+input:hover{
+    background-color: lightsteelblue;
+    color: white;
+}
+input:focus{
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+
+
+
+
+button{
+    width: 100px;
+    height: 20px;
+    border: 2px solid black;
+    margin-left: 100px;
+}
+
+button:active{
+    cursor: progress;
+}
+</style>
+<body>
+
+    <fieldset>
+        <legend><h1>SMIT Form</h1></legend>
+        NAME:<input type="name" placeholder="Name" minlength="3"
+        maxlength="9"><br><br>
+
+
+
+        Father NAME:<input type="name" placeholder="Fathername" minlength="3"
+        maxlength="9"><br><br>
+
+
+
+        EMAIL:<input type="email" placeholder="Email Id" minlength="2"
+        maxlength="7"><br><br>
+        
+
+        PASSWORD:<input type="password" name="password" placeholder="*******" minlength="2"
+        maxlength="7"><br><br>
+
+
+
+        MOBILE NUMBER: <input type="number" placeholder="Mobile Number"><br><br>
+
+
+
+        GENDER:<input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br><br>
+
+
+
+        HOBBIES: <input type="checkbox" name="hobby1" id="hb1" value="Cricket">
+        <label for="hb1">Cricket</label>
+
+        <input type="checkbox" name="hobby2" id="hb2" value="Football">
+        <label for="hb2">Football</label>
+
+        <input type="checkbox" name="hobby3" id="hb3" value="Basketball">
+        <label for="hb3">Basketball</label><br><br>
+
+        Country:<select name="country" id="">
+            <option value="" selected disabled>Select Country</option>
+            <option value="Pak">Pakistan</option>
+            <option value="Ind">India</option>
+            <option value="Afg">Afghanistan</option>
+            <option value="Tur">Turkey</option>
+
+          </select><br><br>
+
+          <button>Submit</button>
+
+    </fieldset>
+
+</body>
+</html>
